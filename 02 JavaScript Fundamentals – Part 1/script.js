@@ -60,6 +60,7 @@ console.log(typeof year);
 console.log(typeof null);
 */
 
+/*
 /////////////////////////////////////
 // Let, const and var
 
@@ -76,3 +77,37 @@ job = 'teahcer';
 // dont do that declare a variable
 lastname = 'Dler';
 console.log(lastname);
+*/
+
+/////////////////////////////////////////
+// Baasic Operators
+
+// math operators
+const currentYear = 2022;
+const ageMuzaffer = currentYear - 2000;
+const ageOmar = currentYear - 1998;
+console.log(ageMuzaffer, ageOmar);
+
+console.log(ageMuzaffer * 2, ageOmar / 10, 2 ** 3);
+// 2 ** 3 means 2 to the power of 3 which means 2 * 2 * 2 = 8
+
+const firstName = 'muzaffer';
+const lastName = 'Dler';
+console.log(firstName + ' ' +lastName);
+
+// assigment operators 
+let x = 10 + 5;
+x += 10; // x = x + 10
+x *= 4; // x = x * 4 = 100
+x++; // x = x + 1
+x--; // x = x - 1;
+x--; // x = x - 1;
+console.log(x);
+
+// comparrison operators 
+console.log(ageMuzaffer > ageOmar); // <, >, >=, <=
+console.log(ageOmar >= 18);
+
+const isFullAge = ageOmar >= 18;
+console.log(currentYear - 1998 > currentYear - 2022);
+console.log(isFullAge);
