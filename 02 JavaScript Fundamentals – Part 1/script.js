@@ -255,6 +255,9 @@ if (height) {
 }
 */
 
+/*
+////////////////////////////////////////
+// Equality Operators_ == vs. ===
 const age = '18'; 
 if(age === 18) console.log('You just became an adult (strict)');
 if(age == 18) console.log('You just became an adult (loose)');
@@ -276,4 +279,32 @@ if (favourite === 23) {
 
 if (favourite !== 23) {
     console.log('Why not 23??');
+}
+*/
+
+///////////////////////////////////////////
+// Logical Operations
+
+const hasDriversLicencse = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicencse && hasGoodVision);
+console.log(hasDriversLicencse || hasGoodVision);
+console.log(!hasDriversLicencse);
+
+const shouldDrive = hasDriversLicencse && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log('Sara is able to drive');
+// } else {
+//     console.log('Someone else should drive');
+// }
+
+const isTired = false;
+console.log(hasDriversLicencse || hasGoodVision || isTired)
+
+if (hasDriversLicencse && hasGoodVision && !isTired) {
+    console.log('Sara is able to drive');
+} else {
+    console.log('Some else should drive');
 }
