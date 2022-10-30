@@ -203,7 +203,7 @@ if ( BMImark > BMIjohn) {
     console.log(`John's BMI (${BMIjohn}) is Higher than Marks (${BMImark})`);
 }
 */
-
+/*
 //////////////////////////////
 // Type Conversion and Coercion
 const inputYear = '2000';
@@ -227,3 +227,29 @@ console.log(n);
 
 let h = "12" + 1;
 console.log(h);
+*/
+
+//////////////////////////////////////
+// Truthy and Falsy Values
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Muzaffer'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 100;
+if (money) {
+    console.log("Don't spended all ;)");
+} else {
+    console.log('You should get a job!')
+}
+
+let height = 10;
+
+if (height) {
+    console.log('Yay! Height is defined');
+} else {
+    console.log('Height is undefined');
+}
