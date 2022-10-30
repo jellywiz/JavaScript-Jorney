@@ -131,7 +131,7 @@ console.log(x,y);
 const averageAge = (ageMuzaffer + ageOmar) / 2;
 console.log(ageMuzaffer, ageOmar, averageAge)
 */
-
+ /*
 // assigment 
 // const massMark = 78, hightMark = 1.69, massJohn = 92, hightJohn = 1.95;
 const massMark = 95, hightMark = 1.88, massJohn = 85, hightJohn = 1.76;
@@ -139,3 +139,25 @@ const BMImark = massMark / hightMark ** 2;
 const BMIjohn = massJohn / (hightJohn * hightJohn);
 let markHigherBm = BMImark > BMIjohn;
 console.log(BMImark, BMIjohn, markHigherBm)
+*/
+
+//////////////////////////////////////////
+// Strings and Template Literals
+const firstName = 'Muzaffer', job = 'Web Developer', birthYear = 2000, year = 2022;
+
+const MJ = "Hello, I'm " + firstName + ', a ' + (year - birthYear) + " years old " + job + '!';
+console.log(MJ);
+
+const MJnew =  `Hello, I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(MJnew);
+
+console.log(`We can use this for any regular strings!!`);
+
+console.log('Starting with \n\
+multile \n\
+lines \
+')
+
+console.log(`Starting with
+multiple
+lines`);
