@@ -141,6 +141,7 @@ let markHigherBm = BMImark > BMIjohn;
 console.log(BMImark, BMIjohn, markHigherBm)
 */
 
+/*
 //////////////////////////////////////////
 // Strings and Template Literals
 const firstName = 'Muzaffer', job = 'Web Developer', birthYear = 2000, year = 2022;
@@ -161,3 +162,26 @@ lines \
 console.log(`Starting with
 multiple
 lines`);
+*/
+
+//////////////////////////////
+// Taking Decisions_ if _ else Statements
+
+const age = 15; // isOldEnough = age >= 18
+
+if (age >= 18) {
+    console.log('Omar can start driving 🚙');
+} else {
+    const yearsRemaining = 18 - 15;
+    console.log(`Omar is too young, wait another ${yearsRemaining} years :)`)
+}
+
+const birthYear = 2012;
+let century;
+if (birthYear < 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+
+console.log(century);
