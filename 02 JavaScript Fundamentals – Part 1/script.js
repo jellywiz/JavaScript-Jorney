@@ -188,6 +188,7 @@ if (birthYear < 2000) {
 console.log(century);
 */
 
+/*
 /////////////////////////////////////
 // challange 2 Taking Decisions_ if _ else Statements
 const massMark = 78, hightMark = 1.69, massJohn = 92, hightJohn = 1.95;
@@ -201,3 +202,28 @@ if ( BMImark > BMIjohn) {
 } else {
     console.log(`John's BMI (${BMIjohn}) is Higher than Marks (${BMImark})`);
 }
+*/
+
+//////////////////////////////
+// Type Conversion and Coercion
+const inputYear = '2000';
+console.log(inputYear, typeof inputYear);
+console.log(typeof Number(inputYear)); 
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Muzaffer")); // NaN means not a number
+console.log(typeof NaN); // NaN is a invalide number
+
+console.log(String(23), typeof String(23), 23, typeof 23);
+
+// type coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+
+let n = '1' + 1; // '11' string 
+n = n - 1;
+console.log(n);
+
+let h = "12" + 1;
+console.log(h);
