@@ -281,7 +281,7 @@ if (favourite !== 23) {
     console.log('Why not 23??');
 }
 */
-
+/*
 ///////////////////////////////////////////
 // Logical Operations
 
@@ -307,4 +307,58 @@ if (hasDriversLicencse && hasGoodVision && !isTired) {
     console.log('Sara is able to drive');
 } else {
     console.log('Some else should drive');
+}
+*/
+
+////////////////////////////////////////////////
+// Coding challenge 3
+
+// // my way
+// const dolphinScore = [96, 108, 89];
+// const kwalaScore = [88, 91, 110];
+// let dolphinAverage = 0;
+// let kwalaAverage = 0;
+// for (let i =0; i < dolphinScore.length; i++){
+//     dolphinAverage += dolphinScore[i];
+// }
+// for (let i =0; i < kwalaScore.length; i++){
+//     kwalaAverage += kwalaScore[i];
+// }
+// dolphinAverage /= 3;
+// kwalaAverage /= 3;
+// console.log(kwalaAverage);
+// console.log(dolphinAverage);
+// if (dolphinAverage > kwalaAverage) {
+//     console.log('Dolphin wins by ' + (dolphinAverage - kwalaAverage) + ' points!');
+// } else if (kwalaAverage > dolphinAverage) {
+//     console.log('Kwala wins by ' + (kwalaAverage - dolphinAverage) + ' points!')
+// } else {
+//     console.log('No one wins');
+// }
+
+// const scoreDolphin = (96 + 108 + 89) / 3;
+// const scoreKwala = (88 + 91 + 110) / 3;
+// console.log(scoreDolphin, scoreKwala);
+
+// if (scoreDolphin > scoreKwala) {
+//     console.log('Dolphin wins the trophy 🏆');
+// } else if (scoreKwala > scoreDolphin) {
+//     console.log('Kwalas wins the trophy 🏆');
+// } else {
+//     console.log('Both wins the trophy 🏆');
+// }
+
+// Bones 1 
+const scoreDolphin = (97 + 112 + 101) / 3;
+const scoreKwala = (109 + 95 + 106) / 3;
+console.log(scoreDolphin, scoreKwala);
+
+if (scoreDolphin > scoreKwala && scoreDolphin >= 100) {
+    console.log('Dolphin wins the trophy 🏆');
+} else if (scoreKwala > scoreDolphin && scoreKwala >= 100) {
+    console.log('Kwalas wins the trophy 🏆');
+} else if (scoreDolphin === scoreKwala && scoreDolphin >= 100 && scoreKwala >= 100) {
+    console.log('Both wins the trophy 🏆');
+} else {
+    console.log('No one wins the trophy 😔')
 }
