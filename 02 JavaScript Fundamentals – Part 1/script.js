@@ -1,3 +1,4 @@
+/*
 let js = "amazing";
 // if (js === "amazing") alert("JavaScript is FUN!");
 
@@ -6,7 +7,7 @@ console.log(40 + 8 + 23 - 10);
 
 console.log("Muzaffer");
 console.log(23);
-
+///////////////////////////////////////
 // Variable name conventions
 let firstName = "Muzaffer";
 let first = "MJ";
@@ -28,3 +29,32 @@ let myCurrentJob = "Teacher";
 // not accepted
 let job1 = "Programmer";
 let job2 = "Teacher";
+
+console.log(myFirstJob);
+*/
+///////////////////////////////////////
+// Data Types
+
+true;
+console.log(true);
+
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
+
+console.log(typeof true);
+console.log(typeof 23);
+console.log(typeof 'muzaffer');
+
+console.log(typeof javascriptIsFun);
+
+javascriptIsFun = "YES!";
+console.log(typeof javascriptIsFun);
+
+let year;
+console.log(year);
+console.log(typeof year);
+
+year = 2022;
+console.log(typeof year);
+
+console.log(typeof null);
