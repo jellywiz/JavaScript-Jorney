@@ -113,6 +113,7 @@ console.log(currentYear - 1998 > currentYear - 2022);
 console.log(isFullAge);
 */
 
+/*
 ////////////////////////////////////////
 // Operator Precedence
 
@@ -129,3 +130,12 @@ console.log(x,y);
 
 const averageAge = (ageMuzaffer + ageOmar) / 2;
 console.log(ageMuzaffer, ageOmar, averageAge)
+*/
+
+// assigment 
+// const massMark = 78, hightMark = 1.69, massJohn = 92, hightJohn = 1.95;
+const massMark = 95, hightMark = 1.88, massJohn = 85, hightJohn = 1.76;
+const BMImark = massMark / hightMark ** 2;
+const BMIjohn = massJohn / (hightJohn * hightJohn);
+let markHigherBm = BMImark > BMIjohn;
+console.log(BMImark, BMIjohn, markHigherBm)
