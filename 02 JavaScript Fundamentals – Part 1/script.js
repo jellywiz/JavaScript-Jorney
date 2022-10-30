@@ -78,7 +78,7 @@ job = 'teahcer';
 lastname = 'Dler';
 console.log(lastname);
 */
-
+/*
 /////////////////////////////////////////
 // Baasic Operators
 
@@ -111,3 +111,21 @@ console.log(ageOmar >= 18);
 const isFullAge = ageOmar >= 18;
 console.log(currentYear - 1998 > currentYear - 2022);
 console.log(isFullAge);
+*/
+
+////////////////////////////////////////
+// Operator Precedence
+
+const currentYear = 2022;
+const ageMuzaffer = currentYear - 2000;
+const ageOmar = currentYear - 1998;
+console.log(currentYear - 1998 > currentYear - 2022);
+
+console.log(25 - 10 - 5);
+
+let x, y;
+x = y  = 25-10-5; // x = y = 10
+console.log(x,y);
+
+const averageAge = (ageMuzaffer + ageOmar) / 2;
+console.log(ageMuzaffer, ageOmar, averageAge)
