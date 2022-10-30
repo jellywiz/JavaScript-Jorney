@@ -34,7 +34,7 @@ console.log(myFirstJob);
 */
 ///////////////////////////////////////
 // Data Types
-
+/*
 true;
 console.log(true);
 
@@ -58,3 +58,21 @@ year = 2022;
 console.log(typeof year);
 
 console.log(typeof null);
+*/
+
+/////////////////////////////////////
+// Let, const and var
+
+let age = 20;
+age = 21;
+
+const birthYear = 2000;
+// Doesnt work with const for mutation
+// birthYear = 2001;
+
+var job = 'programmer';
+job = 'teahcer';
+
+// dont do that declare a variable
+lastname = 'Dler';
+console.log(lastname);
