@@ -8,7 +8,7 @@ const passTest = true;
 if (passTest) hasDriverLicense = true;
 if (hasDriversLicense) console.log('I can drive');
 */
-
+/*
 //////////////////////////////////////////////////
 // Functions
 'use strict'
@@ -41,3 +41,21 @@ console.log(typeof nuum);
 const num = Number(nuum);
 console.log(num);
 console.log(typeof num);
+*/
+
+/////////////////////////////////
+// Function Declarations vs. Expressions
+'use strict'
+// function declaration
+ function calAge1(birthYear) {
+    return 2022 - birthYear;
+ }
+
+ const age1 = calAge1(2000);
+
+ // function expression
+ const calcAge2 = function (birthYear) {
+    return 2022 - birthYear;
+ }
+ const age2 = calcAge2(1999);
+ console.log(age1, age2);
