@@ -160,7 +160,7 @@ lines \
 ')
 
 console.log(`Starting with
-multiple
+mulbillle
 lines`);
 */
 
@@ -408,7 +408,7 @@ if (day === 'monday'){
     console.log('Not a valid day');
 }
 */
-
+/*
 ////////////////////////////////////////
 // The Conditional (Ternary) Operator
 
@@ -430,3 +430,11 @@ console.log(drink2);
 
 console.log(`I like to drink ${drink}`);
 console.log(`I like to drink ${age >= 18 ? 'Tiger': 'Water'}`);
+*/
+
+//////////////////////////////////////////
+// Coding Challenge 4
+
+let bill = 275;
+let tip = bill >= 50 && bill <= 300 ? (bill/100)*15 : (bill/100)*20;
+console.log(`The bill is ${bill}, and the tip is ${tip}, the total would be ${bill + tip}`);
