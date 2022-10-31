@@ -95,7 +95,7 @@ const firstName = 'muzaffer';
 const lastName = 'Dler';
 console.log(firstName + ' ' +lastName);
 
-// assigment operators 
+// assigment operators
 let x = 10 + 5;
 x += 10; // x = x + 10
 x *= 4; // x = x * 4 = 100
@@ -104,7 +104,7 @@ x--; // x = x - 1;
 x--; // x = x - 1;
 console.log(x);
 
-// comparrison operators 
+// comparrison operators
 console.log(ageMuzaffer > ageOmar); // <, >, >=, <=
 console.log(ageOmar >= 18);
 
@@ -131,8 +131,8 @@ console.log(x,y);
 const averageAge = (ageMuzaffer + ageOmar) / 2;
 console.log(ageMuzaffer, ageOmar, averageAge)
 */
- /*
-// assigment 
+/*
+// assigment
 // const massMark = 78, hightMark = 1.69, massJohn = 92, hightJohn = 1.95;
 const massMark = 95, hightMark = 1.88, massJohn = 85, hightJohn = 1.76;
 const BMImark = massMark / hightMark ** 2;
@@ -208,7 +208,7 @@ if ( BMImark > BMIjohn) {
 // Type Conversion and Coercion
 const inputYear = '2000';
 console.log(inputYear, typeof inputYear);
-console.log(typeof Number(inputYear)); 
+console.log(typeof Number(inputYear));
 console.log(Number(inputYear) + 18);
 
 console.log(Number("Muzaffer")); // NaN means not a number
@@ -221,7 +221,7 @@ console.log('I am ' + 23 + ' years old');
 console.log('23' - '10' - 3);
 console.log('23' / '2');
 
-let n = '1' + 1; // '11' string 
+let n = '1' + 1; // '11' string
 n = n - 1;
 console.log(n);
 
@@ -258,7 +258,7 @@ if (height) {
 /*
 ////////////////////////////////////////
 // Equality Operators_ == vs. ===
-const age = '18'; 
+const age = '18';
 if(age === 18) console.log('You just became an adult (strict)');
 if(age == 18) console.log('You just became an adult (loose)');
 
@@ -309,7 +309,7 @@ if (hasDriversLicencse && hasGoodVision && !isTired) {
     console.log('Some else should drive');
 }
 */
-
+/*
 ////////////////////////////////////////////////
 // Coding challenge 3
 
@@ -348,7 +348,7 @@ if (hasDriversLicencse && hasGoodVision && !isTired) {
 //     console.log('Both wins the trophy 🏆');
 // }
 
-// Bones 1 
+// Bones 1
 const scoreDolphin = (97 + 112 + 101) / 3;
 const scoreKwala = (109 + 95 + 106) / 3;
 console.log(scoreDolphin, scoreKwala);
@@ -361,4 +361,49 @@ if (scoreDolphin > scoreKwala && scoreDolphin >= 100) {
     console.log('Both wins the trophy 🏆');
 } else {
     console.log('No one wins the trophy 😔')
+}
+*/
+
+//////////////////////////////////////////////
+// The switch Statement
+
+const day = 'wednesday';
+switch (day){
+    case 'monday': // day === monday
+        console.log('Plan course structor');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare thoory videos');
+        break;
+    case 'wednesday':
+    case 'thursaday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Recored Videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy Weekend');
+        break;
+    default:
+        console.log('Not a valid day');
+        break;
+}
+
+// chalange with if/else 
+if (day === 'monday'){
+    console.log('Plan course structor');
+    console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+    console.log('Prepare thoory videos');
+} else if (day === 'wednesday' || day === 'thursaday') {
+    console.log('Write code examples');
+} else if (day === 'friday') {
+    console.log('Recored Videos');
+} else if (day === 'saturday' || day === 'sunday') {
+    console.log('Enjoy Weekend');
+} else {
+    console.log('Not a valid day');
 }
