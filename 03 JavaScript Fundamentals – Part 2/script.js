@@ -60,7 +60,7 @@ console.log(typeof num);
  const age2 = calcAge2(1999);
  console.log(age1, age2);
  */
-
+/*
  ////////////////////////////
  // Arrow function
  // one paramiter one line of code no need for return
@@ -86,4 +86,25 @@ console.log(typeof num);
 
  console.log(yearsUntilRetinerment1(2000, 'Muzaffer'));
 
+*/
+////////////////////////////////////
+// Functions calling other functions
 
+// function cutFruitPieces(fruit){
+//    return fruit * 4;
+// }
+
+const cutFruitPieces =  (fruit) =>  {
+   return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+   const applepieces = cutFruitPieces(apples);
+   const orangepieces = cutFruitPieces(oranges);
+
+   console.log(apples, oranges);
+   const Juice = `Juice with ${applepieces} apples pieceses and ${orangepieces} oranges pieceses.`;
+   return Juice;
+}
+
+console.log(fruitProcessor(2, 3));
