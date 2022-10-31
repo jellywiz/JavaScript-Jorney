@@ -42,7 +42,7 @@ const num = Number(nuum);
 console.log(num);
 console.log(typeof num);
 */
-
+/*
 /////////////////////////////////
 // Function Declarations vs. Expressions
 'use strict'
@@ -59,3 +59,31 @@ console.log(typeof num);
  }
  const age2 = calcAge2(1999);
  console.log(age1, age2);
+ */
+
+ ////////////////////////////
+ // Arrow function
+ // one paramiter one line of code no need for return
+ const calAge3 = birthYear => 2022 - birthYear;
+
+ const age3 = calAge3(2000);
+ console.log(age3);
+// need return here 👇
+ const yearsUntilRetinerment = birthYear => {
+    const age = 2022 - birthYear;
+    const retierment = 65 - age;
+    return retierment;
+ }
+ console.log(yearsUntilRetinerment(2000));
+
+ // multiple parameters
+ const yearsUntilRetinerment1 = (birthYear, firstName) => {
+    const age = 2022 - birthYear;
+    const retierment = 65 - age;
+    // return retierment;
+    return `${firstName} retired in ${retierment} years`
+ }
+
+ console.log(yearsUntilRetinerment1(2000, 'Muzaffer'));
+
+
