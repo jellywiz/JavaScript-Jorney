@@ -110,7 +110,7 @@ function fruitProcessor(apples, oranges) {
 
 console.log(fruitProcessor(2, 3));
 */
-
+/*
 ////////////////////////////////
 // Reviewing Functions
 
@@ -135,3 +135,35 @@ const yearsUntilRetinerment1 = function (birthYear, firstName)  {
 
 console.log(yearsUntilRetinerment1(2000, 'Muzaffer'));
 console.log(yearsUntilRetinerment1(1940, 'Omar'));
+*/
+
+///////////////////////////////////////////
+// Coding challenge 1 functions
+'use strict'
+ 
+const calcAverage = (score1, score2, score3) => {
+   const average = (score1 + score2 + score3)/3;
+   return average;
+}
+
+const AVRGdolphin = calcAverage(44, 23, 71);
+const AVGkwala = calcAverage(65, 54, 49)
+
+const checkWinner = (avgDolphin, avgKwala) => {
+   // this was my method using advanced if 
+   return avgDolphin >= 2 * avgKwala ? `Dolphins win (${avgDolphin}) vs (${AVGkwala})` 
+   : avgKwala >= 2 * avgDolphin ? `Kwalas wins (${AVGkwala} vs (${avgDolphin})`
+   : `no one wins`;
+   // if (avgDolphin >= 2 * avgKwala) {
+   //    return `dolphin wins`
+   // } else if (avgKwala >= 2 * avgDolphin) {
+   //    return `Kwala wins`
+   // } else {
+   //    return `no one wins`
+   // }
+}
+
+const winner = checkWinner(AVRGdolphin, AVGkwala);
+
+
+console.log(AVRGdolphin, AVGkwala, winner);
