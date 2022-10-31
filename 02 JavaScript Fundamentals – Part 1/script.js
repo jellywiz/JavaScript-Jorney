@@ -363,7 +363,7 @@ if (scoreDolphin > scoreKwala && scoreDolphin >= 100) {
     console.log('No one wins the trophy 😔')
 }
 */
-
+/*
 //////////////////////////////////////////////
 // The switch Statement
 
@@ -407,3 +407,26 @@ if (day === 'monday'){
 } else {
     console.log('Not a valid day');
 }
+*/
+
+////////////////////////////////////////
+// The Conditional (Ternary) Operator
+
+const age = 22;
+age >= 18 ? console.log('I like Tiger') : console.log('I like water');
+
+const drink = age >= 18 ? 'Tiger': 'Water';
+console.log(drink);
+
+// Using if else 
+let drink2;
+if (age >= 18) {
+    drink2 = 'Tiger'
+} else {
+    drink2 = 'Water';
+}
+
+console.log(drink2);
+
+console.log(`I like to drink ${drink}`);
+console.log(`I like to drink ${age >= 18 ? 'Tiger': 'Water'}`);
