@@ -219,7 +219,7 @@ console.log(age1,age2,age3,age4);
 const ages = [calcAge(year[0]),calcAge(year[1]),calcAge(year[2]),calcAge(year[3])];
 console.log(ages);
 */
-
+/*
 /////////////////////////////////////
 // Basic Array Operations (Methods)
 
@@ -246,3 +246,34 @@ console.log(friends.includes(23));
 if (friends.includes('Omar')) {
    console.log(`Yes omar is there in index ${friends.indexOf('Omar')}`);
 }
+*/
+
+/////////////////////////
+// coding challenge 2
+
+
+// const calcTip = function(bill) {
+//    return bill >= 50 && bill <= 300 ? bill * 0.15 :
+//    bill * 0.20;
+// }
+
+// Arrow function
+const calcTip = (bill) => {
+   return bill >= 50 && bill <= 300 ? bill * 0.15 :
+   bill * 0.20;
+}
+
+const bills = new Array(125,555,44);
+// const tips = new Array(calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2]));
+// using functions
+const tips = [];
+for(let i =0; i <bills.length; i++) {
+   tips.push(calcTip(bills[i]));
+}
+
+const total = [];
+
+for(let i =0; i < bills.length; i++){
+   total.push(bills[i] + tips[i]);
+}
+console.log(bills,tips,total);
