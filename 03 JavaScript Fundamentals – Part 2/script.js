@@ -168,7 +168,7 @@ const winner = checkWinner(AVRGdolphin, AVGkwala);
 
 console.log(AVRGdolphin, AVGkwala, winner);
 */
-
+/*
 ///////////////////////////////////////////
 // Introduction to Arrays
 
@@ -218,3 +218,31 @@ console.log(age1,age2,age3,age4);
 
 const ages = [calcAge(year[0]),calcAge(year[1]),calcAge(year[2]),calcAge(year[3])];
 console.log(ages);
+*/
+
+/////////////////////////////////////
+// Basic Array Operations (Methods)
+
+const friends = ['Omar', 'rebaz', 'hevar'];
+console.log(friends);
+const newLength = friends.push('Raad'); // Add in the last of the array
+console.log(newLength);
+console.log(friends);
+
+friends.unshift('Siroz'); // Add in the begining of the array
+friends.pop() // remove the last element
+friends.shift(); // remove the first element
+
+const popped = friends.pop()
+console.log(friends, popped);
+
+console.log('omar is in index of ' + friends.indexOf('Omar'));
+
+console.log(friends.includes('Omar')) // ES6 mehtod for index of return true or false
+
+friends.push(23);
+console.log(friends.includes(23));
+
+if (friends.includes('Omar')) {
+   console.log(`Yes omar is there in index ${friends.indexOf('Omar')}`);
+}
