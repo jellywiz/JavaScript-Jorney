@@ -303,6 +303,6 @@ const doubleValue = value => {
 
 console.log(doubleValue(2));
 */
+//  Default Parameters
 const volume = ( l, w = 2, h = 1) => l * w * h
-
 console.log(volume(2));
