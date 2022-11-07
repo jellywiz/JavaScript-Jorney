@@ -295,10 +295,14 @@ arr.forEach(element => {
    console.log(element);
 });
 */
-
+/*
 // Arrow function extra
 const doubleValue = value => {
    return value* 2;
 }
 
 console.log(doubleValue(2));
+*/
+const volume = ( l, w = 2, h = 1) => l * w * h
+
+console.log(volume(2));
