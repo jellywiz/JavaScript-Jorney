@@ -136,7 +136,7 @@ const yearsUntilRetinerment1 = function (birthYear, firstName)  {
 console.log(yearsUntilRetinerment1(2000, 'Muzaffer'));
 console.log(yearsUntilRetinerment1(1940, 'Omar'));
 */
-
+/*
 ///////////////////////////////////////////
 // Coding challenge 1 functions
 'use strict'
@@ -167,3 +167,54 @@ const winner = checkWinner(AVRGdolphin, AVGkwala);
 
 
 console.log(AVRGdolphin, AVGkwala, winner);
+*/
+
+///////////////////////////////////////////
+// Introduction to Arrays
+
+const friend1 = 'Muzaffer';
+const friend2 = 'Omar';
+const friend3 = 'Ahmed';
+
+const friends = ['Muzaffer', 'Omar', 'Ahmed'];
+console.log(friends);
+
+const years = new Array(1990,1992,2000);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends[1]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'hogr';
+console.log(friends);
+
+//friends = ['bob', 'nawzad']; it will give us an error
+const firstName = 'Muzaffer';
+const lastName = 'Dler'
+const muzaffer = [firstName , lastName, 2022 - 2000, 'teacher', friends];
+console.log(muzaffer);
+console.log(muzaffer.length);
+
+const calcAge = function (birthYear) {
+   return 2022 - birthYear;
+}
+
+const year = [2000,1999,1998,2001];
+console.log(calcAge(year)); // doesnt work like that
+
+for(let i = 0; i < year.length; i++){
+   console.log(calcAge(year[i]));
+}
+
+const age1 = calcAge(year[0]);
+const age2 = calcAge(year[1]);
+const age3 = calcAge(year[2]);
+const age4 = calcAge(year[3]);
+console.log(age1,age2,age3,age4);
+
+const ages = [calcAge(year[0]),calcAge(year[1]),calcAge(year[2]),calcAge(year[3])];
+console.log(ages);
