@@ -303,6 +303,30 @@ const doubleValue = value => {
 
 console.log(doubleValue(2));
 */
+/*
 //  Default Parameters
 const volume = ( l, w = 2, h = 1) => l * w * h
 console.log(volume(2));
+*/
+/*
+//////////////////////////////
+// Introduction to objects
+// this is array
+const muzafferArray = [
+   'muzaffer',
+   'dler',
+   2022 - 2000,
+   'teacher',
+   ['Omar', 'Hevar', 'Rebaz']
+];
+
+// Object Literal Syntac
+const Muzaffer =  {
+   firstName: 'muzaffer',
+   lastname: 'dler',
+   age: 2022 - 2000,
+   job: 'teacher',
+   firneds: ['Omar', 'Hevar', 'Rebaz']
+};
+
+*/
