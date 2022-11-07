@@ -247,7 +247,7 @@ if (friends.includes('Omar')) {
    console.log(`Yes omar is there in index ${friends.indexOf('Omar')}`);
 }
 */
-
+/*
 /////////////////////////
 // coding challenge 2
 
@@ -277,3 +277,20 @@ for(let i =0; i < bills.length; i++){
    total.push(bills[i] + tips[i]);
 }
 console.log(bills,tips,total);
+*/
+
+// Optinal diffrrent ways of for loop
+const arr = new Array(12,13,14);
+// for (let i =0; i< arr.length; i++){
+//    console.log(arr[i]);
+// }
+
+// arr.forEach(element => console.log(element) );
+
+// arr.forEach(function(element){
+//    console.log(element);
+// })
+
+arr.forEach(element => {
+   console.log(element);
+});
