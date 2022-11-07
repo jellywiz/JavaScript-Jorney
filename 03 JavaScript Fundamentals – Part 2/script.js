@@ -278,7 +278,7 @@ for(let i =0; i < bills.length; i++){
 }
 console.log(bills,tips,total);
 */
-
+/*
 // Optinal diffrrent ways of for loop
 const arr = new Array(12,13,14);
 // for (let i =0; i< arr.length; i++){
@@ -294,3 +294,11 @@ const arr = new Array(12,13,14);
 arr.forEach(element => {
    console.log(element);
 });
+*/
+
+// Arrow function extra
+const doubleValue = value => {
+   return value* 2;
+}
+
+console.log(doubleValue(2));
