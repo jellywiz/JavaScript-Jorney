@@ -330,3 +330,40 @@ const Muzaffer =  {
 };
 
 */
+///////////////////////
+// Dot vs Bracket Notation
+const Muzaffer =  {
+   firstName: 'muzaffer',
+   lastName: 'dler',
+   age: 2022 - 2000,
+   job: 'teacher',
+   firneds: ['Omar', 'Hevar', 'Rebaz']
+};
+console.log(Muzaffer);
+// dot notaion
+console.log(Muzaffer.age);
+// brackets notaion
+console.log(Muzaffer['age']);
+
+// cobine both first and last name:
+const nameKey ='Name';
+console.log(Muzaffer['first'+ nameKey]);
+console.log(Muzaffer['last'+ nameKey]);
+
+// it doesnt work with a dot notation
+// console.log(Muzaffer.'last' + nameKey);
+
+const intrestedIn = prompt('what do you want to know about muzaffer?, choose between firstName, lastName, age, job and friends');
+console.log(intrestedIn);
+
+Muzaffer[intrestedIn] ? console.log(Muzaffer[intrestedIn]) : console.log('try a diffrent keyword. choose between firstName, lastName, age, job and friends');
+
+// console.log(Muzaffer[intrestedIn])
+
+Muzaffer.location = 'erbil';
+console.log(Muzaffer.location);
+Muzaffer['twitter'] = 'not exist';
+console.log(Muzaffer['twitter']);
+
+// challange
+console.log(`${Muzaffer.firstName} has ${Muzaffer.firneds.length} and his bestfirend is ${Muzaffer.firneds[0]}`)
