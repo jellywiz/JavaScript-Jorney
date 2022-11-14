@@ -330,6 +330,7 @@ const Muzaffer =  {
 };
 
 */
+/*
 ///////////////////////
 // Dot vs Bracket Notation
 const Muzaffer =  {
@@ -367,3 +368,58 @@ console.log(Muzaffer['twitter']);
 
 // challange
 console.log(`${Muzaffer.firstName} has ${Muzaffer.firneds.length} and his bestfirend is ${Muzaffer.firneds[0]}`)
+*/
+
+///////////////////////////
+// Object Methods
+const Muzaffer =  {
+   firstName: 'muzaffer',
+   lastName: 'dler',
+   birthYear: 2000,
+   job: 'teacher',
+   firneds: ['Omar', 'Hevar', 'Rebaz'],
+   hasDriversLicense: true,
+
+   // arrow function
+   // clacAge: () => {
+   //    return 2022 - birthYear;
+   // }
+
+   //normal function
+   // calcAge: function(birthYear) {
+   //    return 2022 - this.birthYear;
+   // }
+
+   // calcAge: function() {
+   //    // console.log(this)
+   //    return 2022 - this.birthYear;
+   // }
+   calcAge: function() {
+      this.age = 2022 - this.birthYear;
+      return this.age;
+   },
+   // my solution
+   // getSummary: function() {
+   //    if (this.hasDriversLicense) {
+   //       this.summary = `${this.firstName} is a ${this.age}, and he has a drivers license`
+   //    } else {
+   //       this.summary = `${this.firstName} is a ${this.age}, and he does not have a drivers license`
+   //    }
+   //    return this.summary
+   // }
+
+   getSummary: function() {
+      return `${this.firstName} is a ${this.calcAge()}- years old ${this.job}, and has ${this.hasDriversLicense ? 'a' : 'no'} driverse licence`
+   }
+};
+// console.log(Muzaffer.clacAge(Muzaffer.birthYear));
+// console.log(Muzaffer['clacAge'](Muzaffer.birthYear));
+console.log(Muzaffer.calcAge());
+
+console.log(Muzaffer.age);
+console.log(Muzaffer.age);
+console.log(Muzaffer.age);
+
+// chalange
+// "Muzaffer is a 46-year old teacher, and he has a drivers licence" 
+console.log(Muzaffer.getSummary());
