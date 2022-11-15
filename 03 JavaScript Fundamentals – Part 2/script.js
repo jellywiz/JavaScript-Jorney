@@ -369,7 +369,7 @@ console.log(Muzaffer['twitter']);
 // challange
 console.log(`${Muzaffer.firstName} has ${Muzaffer.firneds.length} and his bestfirend is ${Muzaffer.firneds[0]}`)
 */
-
+/*
 ///////////////////////////
 // Object Methods
 const Muzaffer =  {
@@ -423,3 +423,38 @@ console.log(Muzaffer.age);
 // chalange
 // "Muzaffer is a 46-year old teacher, and he has a drivers licence" 
 console.log(Muzaffer.getSummary());
+*/
+
+////////////////////////////////
+// Coding Challenge 3
+
+const mark = {
+   fullName: 'Mark Miller',
+   mass: 78,
+   height: 1.69,
+   calcBmi: function () {
+      this.bmi = this.mass / this.height;
+      return this.bmi;
+   }
+}
+
+const john = {
+   fullName: 'John Smith',
+   mass: 92,
+   height: 1.95,
+   calcBmi: function () {
+      this.bmi = this.mass / this.height;
+      return this.bmi;
+   }
+}
+mark.calcBmi();
+john.calcBmi();
+console.log(mark.bmi, john.bmi);
+
+if(mark.bmi > john.bmi) {
+   console.log(`${mark.fullName}'s bmi (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`);
+} else {
+   console.log(`${john.fullName}'s bmi (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`);
+}
+// it can work like this too.
+return mark.bmi > john.bmi ? console.log(`${mark.fullName}'s bmi (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`) : console.log(`${john.fullName}'s bmi (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`);
