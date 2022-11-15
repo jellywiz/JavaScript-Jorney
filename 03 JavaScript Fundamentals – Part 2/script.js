@@ -424,7 +424,7 @@ console.log(Muzaffer.age);
 // "Muzaffer is a 46-year old teacher, and he has a drivers licence" 
 console.log(Muzaffer.getSummary());
 */
-
+/*
 ////////////////////////////////
 // Coding Challenge 3
 
@@ -458,3 +458,22 @@ if(mark.bmi > john.bmi) {
 }
 // it can work like this too.
 return mark.bmi > john.bmi ? console.log(`${mark.fullName}'s bmi (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`) : console.log(`${john.fullName}'s bmi (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`);
+*/
+
+////////////////////////////
+// Iteration_ The for Loop
+
+// console.log('lifting weight repetion 1');
+// console.log('lifting weight repetion 2');
+// console.log('lifting weight repetion 3');
+// console.log('lifting weight repetion 4');
+// console.log('lifting weight repetion 5');
+// console.log('lifting weight repetion 6');
+// console.log('lifting weight repetion 7');
+// console.log('lifting weight repetion 8');
+// console.log('lifting weight repetion 9');
+// console.log('lifting weight repetion 10');
+
+for(let i = 1; i <= 10; i++) {
+   console.log(`ifting weight repetion ${i}`);
+}
