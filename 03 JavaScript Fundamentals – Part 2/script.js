@@ -478,7 +478,7 @@ for(let i = 1; i <= 10; i++) {
    console.log(`ifting weight repetion ${i}`);
 }
 */
-
+/*
 ///////////////////////////////
 // Looping Arrays, Breaking and Continuing
 
@@ -519,4 +519,29 @@ console.log(`--- Break with number`);
 for(let i =0 ; i < muzafferArray.length; i += 1) {
    if(typeof muzafferArray[i] === 'number') break;
    console.log(muzafferArray[i], typeof muzafferArray[i]);
+}
+*/
+
+/////////////////////////////
+// Looping Backwards and Loops in Loops
+
+const muzafferArray = [
+   'muzaffer',
+   'dler',
+   2022 - 2000,
+   'teacher',
+   ['Omar', 'Hevar', 'Rebaz'],
+   true
+];
+
+for(let i = muzafferArray.length - 1; i >= 0 ; i -= 1) {
+   console.log(i, muzafferArray[i]);
+}
+
+for(let exercise = 1; exercise < 4; exercise += 1) {
+   console.log(`------- starting exercise ${exercise}`);
+
+   for(let rep = 0; rep < 6; rep +=1) {
+      console.log(` Exersice ${exercise}: lifting weight ${rep}`)
+   }
 }
