@@ -459,7 +459,7 @@ if(mark.bmi > john.bmi) {
 // it can work like this too.
 return mark.bmi > john.bmi ? console.log(`${mark.fullName}'s bmi (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`) : console.log(`${john.fullName}'s bmi (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`);
 */
-
+/*
 ////////////////////////////
 // Iteration_ The for Loop
 
@@ -476,4 +476,47 @@ return mark.bmi > john.bmi ? console.log(`${mark.fullName}'s bmi (${mark.bmi}) i
 
 for(let i = 1; i <= 10; i++) {
    console.log(`ifting weight repetion ${i}`);
+}
+*/
+
+///////////////////////////////
+// Looping Arrays, Breaking and Continuing
+
+const muzafferArray = [
+   'muzaffer',
+   'dler',
+   2022 - 2000,
+   'teacher',
+   ['Omar', 'Hevar', 'Rebaz'],
+   true
+];
+const types = [];
+for(let i =0; i< muzafferArray.length; i += 1){
+   console.log(muzafferArray[i], typeof muzafferArray[i]);
+   // types[i] = typeof muzafferArray[i];
+   types.push(typeof muzafferArray[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2000, 2012, 1980];
+const age = [];
+
+for(let i=0; i<years.length; i += 1) {
+   age.push(2022 - years[i]);
+}
+
+console.log(years, age);
+
+//continue and break
+console.log(`--- only strings`);
+for(let i =0; i< muzafferArray.length; i += 1){
+   if(typeof muzafferArray[i] !== 'string') continue;
+   console.log(muzafferArray[i], typeof muzafferArray[i]);
+}
+
+console.log(`--- Break with number`);
+for(let i =0 ; i < muzafferArray.length; i += 1) {
+   if(typeof muzafferArray[i] === 'number') break;
+   console.log(muzafferArray[i], typeof muzafferArray[i]);
 }
