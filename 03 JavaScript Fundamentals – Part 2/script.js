@@ -521,7 +521,7 @@ for(let i =0 ; i < muzafferArray.length; i += 1) {
    console.log(muzafferArray[i], typeof muzafferArray[i]);
 }
 */
-
+/*
 /////////////////////////////
 // Looping Backwards and Loops in Loops
 
@@ -545,3 +545,57 @@ for(let exercise = 1; exercise < 4; exercise += 1) {
       console.log(` Exersice ${exercise}: lifting weight ${rep}`)
    }
 }
+*/
+/*
+///////////////////////////////
+// The while Loop
+
+// for(let i = 1; i <= 10; i++) {
+//    console.log(`ifting weight repetion ${i}`);
+// }
+
+// let rep = 1;
+// while( rep <= 10) {
+//    console.log(`lifting weight repetion ${rep}`);
+//    rep++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while(dice !== 6) {
+   console.log(`You have rolled ${dice}`)  
+   dice = Math.trunc(Math.random() * 6) + 1;
+   console.log(dice) ;
+}
+*/
+
+/////////////////////
+// Coding Challenge 4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+const calcTip = (bill) => {
+   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+for (let i = 0; i < bills.length; i += 1) {
+   const tip = calcTip(bills[i]);
+   tips.push(tip);
+   totals.push(bills[i] + tip);
+}
+
+console.log(bills, tips, totals);
+
+const calcAverage = (arr) => {
+   let sum = 0;
+   for (let i =0; i < arr.length; i += 1){
+      sum += arr[i];
+   }
+   return sum / arr.length;
+}
+const avaregeBill = calcAverage(totals);
+const avarageTips = calcAverage(tips);
+console.log(avaregeBill, avarageTips)
