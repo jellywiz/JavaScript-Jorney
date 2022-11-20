@@ -14,6 +14,10 @@ document.querySelector('.guess').value = 23;
 console.log(document.querySelector('.guess').value);
 */
 const checkBtn = document.querySelector('.check');
+let randomNum = Math.trunc(Math.random() * 20) + 1;
+const number = document.querySelector('.number');
+number.textContent = randomNum;
+let score = 20;
 
 checkBtn.addEventListener('click', () => {
   const guess = Number(document.querySelector('.guess').value);
@@ -29,6 +33,88 @@ checkBtn.addEventListener('click', () => {
     document.querySelector('.message').textContent = 'No Number';
   } else {
     document.querySelector('.guess').style.border = '4px solid #eee';
-    console.log(typeof guess);
+    if (guess === randomNum && score > 0) {
+      document.querySelector('.message').textContent = 'Well Done Correct';
+      document.querySelector('.guess').style.border = '4px solid green';
+    } else if (guess > randomNum) {
+      if (score > 1) {
+        document.querySelector('.message').textContent = 'Too High';
+        score -= 1;
+      } else {
+        document.querySelector('.message').textContent =
+          'Game Over! Please try again';
+        score = 0;
+      }
+    } else {
+      if (score > 1) {
+        document.querySelector('.message').textContent = 'Too Low';
+        score -= 1;
+      } else {
+        document.querySelector('.message').textContent =
+          'Game Over! Please try again';
+        score = 0;
+      }
+    }
+    document.querySelector('.score').textContent = score;
+  }
+});
+
+const againBtn = document.querySelector('.again');
+
+againBtn.addEventListener('click', () => {
+  score = 20;
+  randomNum = Math.trunc(Math.random() * 20) + 1;
+  document.querySelector('.message').textContent = 'Start guessing...';
+  document.querySelector('.guess').style.border = '4px solid #eee';
+  document.querySelector('.guess').value = null;
+  document.querySelector('.score').textContent = score;
+  number.textContent = randomNum;
+});
+
+const guessInput = document.querySelector('.guess');
+
+guessInput.addEventListener('keypress', event => {
+  const guess = Number(document.querySelector('.guess').value);
+  if (event.key === 'Enter') {
+    if (
+      document.querySelector('.guess').value > 20 ||
+      document.querySelector('.guess').value < 0
+    ) {
+      document.querySelector('.guess').style.border = '4px solid red';
+      document.querySelector('.message').textContent =
+        'The number should be between 1 and 20';
+    } else if (!guess) {
+      document.querySelector('.guess').style.border = '4px solid red';
+      document.querySelector('.message').textContent = 'No Number';
+    } else {
+      document.querySelector('.guess').style.border = '4px solid #eee';
+      if (guess === randomNum && score > 0) {
+        document.querySelector('.message').textContent = 'Well Done Correct';
+        document.querySelector('.guess').style.border = '4px solid green';
+      } else if (guess > randomNum) {
+        if (score > 1) {
+          document.querySelector('.message').textContent = 'Too High';
+          score -= 1;
+        } else {
+          document.querySelector('.message').textContent =
+            'Game Over! Please try again';
+          score = 0;
+        }
+      } else {
+        if (score > 1) {
+          document.querySelector('.message').textContent = 'Too Low';
+          score -= 1;
+        } else {
+          document.querySelector('.message').textContent =
+            'Game Over! Please try again';
+          score = 0;
+        }
+      }
+    }
+    if (score <= 0) {
+      document.querySelector('.message').textContent =
+        'Game Over! Please try again';
+    }
+    document.querySelector('.score').textContent = score;
   }
 });
