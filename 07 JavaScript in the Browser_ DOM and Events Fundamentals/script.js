@@ -34,8 +34,9 @@ checkBtn.addEventListener('click', () => {
   } else {
     document.querySelector('.guess').style.border = '4px solid #eee';
     if (guess === randomNum && score > 0) {
+      document.querySelector('.number').style.width = '30rem';
+      document.querySelector('body').style.backgroundColor = 'green';
       document.querySelector('.message').textContent = 'Well Done Correct';
-      document.querySelector('.guess').style.border = '4px solid green';
     } else if (guess > randomNum) {
       if (score > 1) {
         document.querySelector('.message').textContent = 'Too High';
@@ -69,6 +70,8 @@ againBtn.addEventListener('click', () => {
   document.querySelector('.guess').value = null;
   document.querySelector('.score').textContent = score;
   number.textContent = randomNum;
+  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('.number').style.width = '15rem';
 });
 
 const guessInput = document.querySelector('.guess');
@@ -89,8 +92,9 @@ guessInput.addEventListener('keypress', event => {
     } else {
       document.querySelector('.guess').style.border = '4px solid #eee';
       if (guess === randomNum && score > 0) {
+        document.querySelector('.number').style.width = '30rem';
+        document.querySelector('body').style.backgroundColor = 'green';
         document.querySelector('.message').textContent = 'Well Done Correct';
-        document.querySelector('.guess').style.border = '4px solid green';
       } else if (guess > randomNum) {
         if (score > 1) {
           document.querySelector('.message').textContent = 'Too High';
