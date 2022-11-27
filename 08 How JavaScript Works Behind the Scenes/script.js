@@ -1,4 +1,5 @@
-// 'use strict';
+'use strict';
+/*
 // Scoping in Practice
 function calcAge(birthYear) {
   const age = 2037 - birthYear;
@@ -29,3 +30,41 @@ const firstName = 'Jonas';
 calcAge(1991);
 // console.log(age);
 // printAge();
+
+*/
+
+// this keyword
+// console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2022 - birthYear);
+  console.log(this);
+};
+calcAge(2000);
+
+const calcAgeArrow = birthYear => {
+  console.log(2022 - birthYear);
+  console.log(this);
+};
+calcAgeArrow(2000);
+
+const jonas = {
+  year: 2000,
+  calcAge: function () {
+    console.log(this);
+    console.log(2022 - this.year);
+  },
+};
+
+jonas.calcAge();
+
+const mitela = {
+  year: 2017,
+};
+
+mitela.calcAge = jonas.calcAge;
+mitela.calcAge();
+
+const f = jonas.calcAge;
+console.log(f);
+// f();
