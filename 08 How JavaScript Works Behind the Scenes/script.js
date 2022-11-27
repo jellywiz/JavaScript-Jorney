@@ -70,6 +70,7 @@ console.log(f);
 // f();
 */
 
+/*
 // Regular Functions vs. Arrow Functions
 const jonas = {
   firstName: 'Jonas',
@@ -117,3 +118,23 @@ const addArrow = (a, b) => {
   return a + b;
 };
 addArrow(2, 4);
+*/
+
+// Primitives vs. Objects (Primitive vs. Reference Types)
+let age = 20;
+let oldAge = age;
+
+age = 21;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: 'Muzaffer',
+  age: 20,
+};
+
+const friend = me;
+friend.age = 27;
+
+console.log('Friend:', friend);
+console.log('Me:', me);
