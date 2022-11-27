@@ -32,7 +32,7 @@ calcAge(1991);
 // printAge();
 
 */
-
+/*
 // this keyword
 // console.log(this);
 
@@ -68,3 +68,52 @@ mitela.calcAge();
 const f = jonas.calcAge;
 console.log(f);
 // f();
+*/
+
+// Regular Functions vs. Arrow Functions
+const jonas = {
+  firstName: 'Jonas',
+  year: 1995,
+  calcAge: function () {
+    // console.log(this);
+    console.log(2022 - this.year);
+    // new modern solution
+    const isMilinuim = () => {
+      console.log(this);
+      console.log(this.year);
+      console.log(this.year >= 1980 && this.year <= 2000);
+
+      //     // old solution
+      //     const self = this; // self or that
+      //     const isMilinuim = function () {
+      //       console.log(this);
+      //       console.log(self.year);
+      //       console.log(self.year >= 1980 && self.year <= 2000);
+
+      //     // console.log(this.year);
+      //     // console.log(this.year >= 1980 && this.year <= 2000);
+      //   };
+    };
+    isMilinuim();
+  },
+  greet: () => console.log(`Hey ${this.firstName}`),
+  // greet: function () {
+  //   console.log(`Hey ${this.firstName}`);
+  // },
+};
+jonas.calcAge();
+jonas.greet();
+
+// Arrgumments key
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+addExpr(2, 4);
+addExpr(2, 4, 5, 10, 4);
+
+const addArrow = (a, b) => {
+  console.log(arguments); // it wont be defined
+  return a + b;
+};
+addArrow(2, 4);
